@@ -1,0 +1,4 @@
+id,kind,role,source,size,file,prompt_or_note
+brand-mark,ui,shell,BrainDaemon library,64x64,assets/brand/core-mark-64.png,Kit brand
+fallback-sheet,sprite,fallback,BrainDaemon library,24x24,assets/characters/pixel-crew.png,Used if CDN sprites fail
+fallback-json,data,fallback,BrainDaemon library,,assets/characters/pixel-crew.json,sheet map

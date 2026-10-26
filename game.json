@@ -1,0 +1,17 @@
+{
+  "title": "Prontera Walk",
+  "description": {
+    "en": "Walk a novice through a slice of Prontera with real map collision and classic sprites streamed from your asset server.",
+    "ar": "امشِ بمغامر مبتدئ في جزء من برونtera باصطدام خريطة حقيقي وsprites كلاسيكية.",
+    "ru": "Пройдите новичком по участку Пrontera с настоящей коллизией карты и классическими спрайтами.",
+    "zh": "操控新手漫步普隆德拉街区，使用真实地图碰撞与经典精灵图。"
+  },
+  "genre": "dungeon",
+  "category": "adventure",
+  "dimension": "2d",
+  "controls": {
+    "touch": "Stick to walk, DASH to sprint, USE to talk to NPCs",
+    "keys": "WASD walk, Shift or Space dash, E talk"
+  },
+  "tags": ["exploration", "top-down", "town", "mvp"]
+}

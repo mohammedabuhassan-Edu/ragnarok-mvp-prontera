@@ -1,0 +1,255 @@
+export default {
+  "seed": "ro-prontera-mvp-1",
+  "assetBase": "https://assets.latam-tools.com.br",
+  "mapName": "prontera",
+  "mapSlice": {
+    "cx": 156,
+    "cy": 192,
+    "width": 96,
+    "height": 96
+  },
+  "view": {
+    "min": 120,
+    "texel": 0.5
+  },
+  "tile": 8,
+  "hero": {
+    "w": 10,
+    "h": 10,
+    "maxSpeed": 95,
+    "accel": 720,
+    "friction": 680,
+    "dash": true,
+    "dashSpeed": 260,
+    "dashTime": 0.14,
+    "dashCooldown": 0.45
+  },
+  "mob": {
+    "w": 10,
+    "h": 10,
+    "maxSpeed": 42,
+    "accel": 400,
+    "friction": 500,
+    "wander": 0.45
+  },
+  "camera": {
+    "deadzone": {
+      "w": 24,
+      "h": 20
+    },
+    "lookAhead": {
+      "x": 12,
+      "y": 8,
+      "rate": 4
+    },
+    "smooth": 10
+  },
+  "rules": {
+    "useReach": 24,
+    "talkDuration": 4.5
+  },
+  "sprites": {
+    "heroIdle": {
+      "job": "0",
+      "gender": "male",
+      "head": "1",
+      "action": "0",
+      "frame": "0"
+    },
+    "heroWalk": {
+      "job": "0",
+      "gender": "male",
+      "head": "1",
+      "action": "8"
+    },
+    "poring": {
+      "job": "1002",
+      "action": "0"
+    },
+    "npcGuard": {
+      "job": "1",
+      "gender": "male",
+      "head": "1",
+      "weapon": "1",
+      "action": "0",
+      "frame": "0"
+    },
+    "npcMerchant": {
+      "job": "6",
+      "gender": "female",
+      "head": "3",
+      "action": "0",
+      "frame": "0"
+    }
+  },
+  "npcs": [
+    {
+      "id": "guard",
+      "tx": 48,
+      "ty": 52,
+      "sprite": "npcGuard",
+      "lines": {
+        "en": "Welcome to Prontera, adventurer.",
+        "ar": "مرحباً بك في برونtera أيها المغامر.",
+        "ru": "Добро пожаловать в Пrontera, искатель приключений.",
+        "zh": "欢迎来到普隆德拉，冒险者。"
+      }
+    },
+    {
+      "id": "merchant",
+      "tx": 58,
+      "ty": 48,
+      "sprite": "npcMerchant",
+      "lines": {
+        "en": "Potions and gear — come back when we add shops!",
+        "ar": "جرعات ومعدات — عد عندما نضيف المتاجر!",
+        "ru": "Зелья и снаряжение — зайдите, когда добавим лавки!",
+        "zh": "药水和装备——等我们加上商店再来！"
+      }
+    }
+  ],
+  "mobSpawns": [
+    {
+      "tx": 44,
+      "ty": 50
+    },
+    {
+      "tx": 52,
+      "ty": 54
+    },
+    {
+      "tx": 50,
+      "ty": 46
+    },
+    {
+      "tx": 54,
+      "ty": 50
+    },
+    {
+      "tx": 46,
+      "ty": 48
+    },
+    {
+      "tx": 56,
+      "ty": 52
+    }
+  ],
+  "stressMobs": 6,
+  "brand": [
+    {
+      "kind": "sign",
+      "x": 392,
+      "y": 388
+    },
+    {
+      "kind": "banner",
+      "x": 368,
+      "y": 412,
+      "w": 64
+    },
+    {
+      "kind": "sign",
+      "x": 410,
+      "y": 370
+    }
+  ],
+  "music": {
+    "bpm": 88,
+    "tracks": [
+      {
+        "wave": "pad",
+        "vol": 0.18,
+        "notes": [
+          [
+            0,
+            8,
+            55
+          ],
+          [
+            4,
+            8,
+            59
+          ],
+          [
+            0,
+            8,
+            62
+          ],
+          [
+            4,
+            8,
+            67
+          ]
+        ]
+      },
+      {
+        "wave": "pluck",
+        "vol": 0.2,
+        "notes": [
+          [
+            0,
+            0.6,
+            76
+          ],
+          [
+            2,
+            0.6,
+            79
+          ],
+          [
+            4,
+            0.6,
+            72
+          ],
+          [
+            6,
+            0.6,
+            76
+          ]
+        ]
+      }
+    ]
+  },
+  "text": {
+    "en": {
+      "title": "Prontera Walk",
+      "subtitle": "MVP — explore the capital with real map data and sprites.",
+      "touchHint": "Stick: walk · USE: talk to NPCs",
+      "keysHint": "WASD walk · E talk",
+      "loading": "Loading Prontera map…",
+      "loadFail": "Could not load map. Check connection and retry.",
+      "talkHint": "Press E / USE to talk",
+      "nothing": "Nobody nearby"
+    },
+    "ar": {
+      "title": "جولة في برونtera",
+      "subtitle": "نسخة أولية — استكشف العاصمة ببيانات الخريطة الحقيقية.",
+      "touchHint": "العصا: مشي · استخدم: التحدث",
+      "keysHint": "WASD مشي · E حديث",
+      "loading": "تحميل خريطة برونtera…",
+      "loadFail": "تعذّر تحميل الخريطة.",
+      "talkHint": "E للحديث",
+      "nothing": "لا أحد قريب"
+    },
+    "ru": {
+      "title": "Прогулка по Пrontera",
+      "subtitle": "MVP — исследуйте столицу с настоящей картой и спрайтами.",
+      "touchHint": "Стик: ходьба · ИСП.: говорить",
+      "keysHint": "WASD ходьба · E говорить",
+      "loading": "Загрузка карты…",
+      "loadFail": "Не удалось загрузить карту.",
+      "talkHint": "E — говорить",
+      "nothing": "Рядом никого"
+    },
+    "zh": {
+      "title": "普隆德拉漫步",
+      "subtitle": "MVP——用真实地图数据探索首都。",
+      "touchHint": "摇杆：行走 · 使用：对话",
+      "keysHint": "WASD 行走 · E 对话",
+      "loading": "正在加载普隆德拉地图…",
+      "loadFail": "无法加载地图。",
+      "talkHint": "按 E 对话",
+      "nothing": "附近没有人"
+    }
+  }
+};

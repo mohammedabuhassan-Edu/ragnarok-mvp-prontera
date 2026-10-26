@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#1a4a2e">
+<title>Prontera Walk</title>
+<link rel="icon" href="./assets/brand/core-mark-64.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #0f2818; overflow: hidden; overscroll-behavior: none; touch-action: none; }
+  canvas#game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+</style>
+<script type="importmap">
+{ "imports": { "kit": "./kit/index.js" } }
+</script>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
